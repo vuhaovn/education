@@ -1,0 +1,96 @@
+/*------------------------------------------
+  SASS la gi
+------------------------------------------*/
+
+#navigation {
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      margin: 0 10px;
+    }
+  }
+}
+
+/*------------------------------------------
+  1 . Qui tac xep chong
+------------------------------------------*/
+
+.content {
+  ul {
+    li {
+      float: left;
+      a {
+        display: block;
+        color: #000;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------------
+  2 . Bien'
+------------------------------------------*/
+
+$color-blue: blue;
+
+.txt {
+  color: $color-blue;
+}
+
+/*------------------------------------------
+  3 . Mixin
+------------------------------------------*/
+
+@mixin button($color) {
+  border: none;
+  height: 30px;
+  color: $color;
+}
+
+.btn_login {
+  @include button(#ababab);
+}
+
+.btn_logout {
+  @include button(#000000);
+}
+
+/*------------------------------------------
+  5 . Ke thua 
+------------------------------------------*/
+
+%title {
+  border-top: 2px solid red;
+  border-bottom: 1px solid red;
+  padding: 10px;
+}
+
+.top_title {
+  @extend %title;
+}
+
+/*------------------------------------------
+  6. Su dung menh de dieu kien if , else
+------------------------------------------*/
+
+$responsive: true;
+
+@if $responsive == true {
+  @media all and (max-width: 320px) {
+    body {
+      font-size: 200%;
+    }
+  }
+}
+
+/*------------------------------------------
+  7. Van de khac
+  - Minh viet css trong tung file rieng
+  - Vi du : tao 1 file _slider.scss
+------------------------------------------*/
+
+@import "slider";

@@ -1,0 +1,15 @@
+#slider {
+  background: black;
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

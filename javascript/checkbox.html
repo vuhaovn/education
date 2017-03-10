@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title>Javascript | Flash MaxSi</title>
+
+<script type="text/javascript" src="../share/js/jquery-1.8.2.js"></script>
+
+<style type="text/css">
+  label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("a").click(function(){
+
+    var ele = $(":checkbox").filter(":checked").val();
+      
+      if( !ele ){
+          return false;
+      } else {
+          return true;
+      }
+  });
+  
+});
+
+
+</script>
+
+
+<label><input type="checkbox">Click</label>
+    
+    
+<div><a href="http://google.com" target="_blank">Link</a></div>
+
+</body>
+</html>

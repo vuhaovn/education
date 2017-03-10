@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Starter</title>
+</head>
+<body>
+
+  Input name : <input id="textInput" type="text"/>
+  Good morning : <span id="nameDiv"></span>!
+
+  <script>
+
+    var 
+      textInputElement = document.getElementById('textInput'),
+      nameDivElement = document.getElementById('nameDiv');
+
+    textInputElement.addEventListener('keyup', function(){
+      var text = textInputElement.value;
+      nameDivElement.innerHTML = text;
+    });
+
+  </script>
+
+</body>
+</html>

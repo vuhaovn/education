@@ -1,0 +1,19 @@
+{
+  "info": [
+    {
+      "name": "The Flash",
+      "age": 19,
+      "home": "VietNam"
+    },
+    {
+      "name": "Superman",
+      "age": 25,
+      "home": "American"
+    },
+    {
+      "name": "Batman",
+      "age": 25,
+      "home": "Gotham"
+    }
+  ]
+}

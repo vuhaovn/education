@@ -1,0 +1,70 @@
+/*------------------------------------------
+  SASS la gi
+------------------------------------------*/
+#navigation ul {
+  overflow: hidden; }
+  #navigation ul li {
+    float: left;
+    margin: 0 10px; }
+
+/*------------------------------------------
+  1 . Qui tac xep chong
+------------------------------------------*/
+.content ul li {
+  float: left; }
+  .content ul li a {
+    display: block;
+    color: #000; }
+    .content ul li a:hover {
+      color: #fff; }
+
+/*------------------------------------------
+  2 . Bien'
+------------------------------------------*/
+.txt {
+  color: blue; }
+
+/*------------------------------------------
+  3 . Mixin
+------------------------------------------*/
+.btn_login {
+  border: none;
+  height: 30px;
+  color: #ababab; }
+
+.btn_logout {
+  border: none;
+  height: 30px;
+  color: #000000; }
+
+/*------------------------------------------
+  5 . Ke thua 
+------------------------------------------*/
+.top_title {
+  border-top: 2px solid red;
+  border-bottom: 1px solid red;
+  padding: 10px; }
+
+/*------------------------------------------
+  6. Su dung menh de dieu kien if , else
+------------------------------------------*/
+@media all and (max-width: 320px) {
+  body {
+    font-size: 200%; } }
+/*------------------------------------------
+  7. Van de khac
+  - Minh viet css trong tung file rieng
+  - Vi du : tao 1 file _slider.scss
+------------------------------------------*/
+#slider {
+  background: black; }
+  #slider ul {
+    overflow: hidden; }
+    #slider ul li {
+      float: left; }
+      #slider ul li a {
+        text-decoration: none; }
+        #slider ul li a:hover {
+          text-decoration: underline; }
+
+/*# sourceMappingURL=index.css.map */

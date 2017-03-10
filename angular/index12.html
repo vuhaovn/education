@@ -1,0 +1,33 @@
+<html ng-app="nameApp">
+<head>
+  <meta charset="utf-8">
+  <title>Fetching JSON</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body ng-controller="nameController">
+
+  <table>
+    <tr>
+      <th>Country</th>
+      <th>Population</th>
+    </tr>
+    <tr ng-repeat="country in countries">
+      <td>{{country.name}}</td>
+      <td>{{country.population}}</td>
+    </tr>
+  </table>
+
+<script>
+  
+  var nameApp = angular.module('nameApp', []);
+
+  nameApp.controller('nameController', function($scope, $http) {
+    $http.get('js/countries.json').success(function(data) {
+      $scope.countries = data;
+    });
+  });
+
+</script>
+
+</body>
+</html>

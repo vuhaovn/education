@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Data Binding with JQuery</title>
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+
+  Input name : <input id="textInput" type="text"/>
+  Good morning : <span id="nameDiv"></span>!
+
+  <script>
+
+    $("#textInput").on("keyup", function() {
+      var $text = $(this).val();
+      $("#nameDiv").html( $text );
+    });
+
+  </script>
+
+</body>
+</html>

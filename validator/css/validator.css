@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*===================================================
+  #validator
+===================================================*/
+#validator {
+  padding: 30px 0;
+}
+#validator h2 {
+  font-size: 200%;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 6px;
+}
+#validator .validator_form {
+  padding: 25px 0;
+}
+#validator .validator_form table {
+  width: 100%;
+}
+#validator .validator_form th {
+  width: 210px;
+  font-size: 125%;
+  vertical-align: top;
+}
+#validator .validator_form td {
+  vertical-align: top;
+  padding: 0 0 20px;
+}
+#validator input[type="text"],
+#validator input[type="password"] {
+  padding: 5px;
+  width: 330px;
+}
+#validator #date {
+  width: 160px;
+}
+#validator #browser {
+  background: #ff8a00;
+  font-size: 125%;
+  height: 27px;
+  line-height: 27px;
+  margin-left: 8px;
+  padding: 0 8px;
+  vertical-align: top;
+}
+#validator #avata,
+#validator .radio {
+  display: none;
+}
+#validator input[type="radio"] + .btn_radio {
+  width: 13px;
+  height: 13px;
+  background: url(../img/img-radio.gif) no-repeat 0 0;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+#validator input[type="radio"]:checked + .btn_radio {
+  background: url(../img/img-radio_checked.gif) no-repeat 0 0;
+}
+#validator .radio_error input[type="radio"] + .btn_radio {
+  background: url(../img/img-radio_error.gif) no-repeat 0 0;
+}
+#validator .radio_error input[type="radio"]:checked + .btn_radio {
+  background: url(../img/img-radio_checked.gif) no-repeat 0 0;
+}
+#validator .validator_form select {
+  padding: 5px;
+  width: 344px;
+}
+#validator .validator_form textarea {
+  padding: 5px;
+  width: 330px;
+}
+#validator input[type="reset"] {
+  background: #bdbdbd;
+  font-size: 125%;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+#validator input[type="submit"] {
+  background: #ff8a00;
+  font-size: 125%;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+#validator .validator_form .error,
+#validator .validator_form .pass_error {
+  color: #ff0000;
+  font-size: 117%;
+  margin-top: 10px;
+  font-style: italic;
+  display: none;
+}
+#validator .validator_form .border_error {
+  border: 1px solid #ff0000;
+}
+#validator .validator_form .happened_error .error,
+#validator .validator_form .show_pass .pass_error {
+  display: block;
+}
+#validator .validator_form .invalid {
+    border: 1px solid red;
+}
+#validator label {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 117%;
+}
+#validator label.mb {
+  display: block;
+  margin-bottom: 5px;
+}
+#validator label.edge {
+  margin-top: 20px;
+}
+#validator label input,
+#validator label span {
+  vertical-align: middle;
+}
+#validator label span {
+  margin: 0 15px 0 8px;
+}

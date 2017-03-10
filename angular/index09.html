@@ -1,0 +1,32 @@
+<html ng-app="nameApp">
+<head>
+  <meta charset="utf-8">
+  <title>Changing scope values asynchronously - updates propagate .apply().</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body ng-controller="nameController">
+
+  First name: <input ng-model="fname" type="text"/>
+  <hr>
+  Last name: <input ng-model="lname" type="text"/>
+  <hr>
+  Good morning : <span>{{fname}}</span>&nbsp;<span>{{lname}}</span>
+
+<script>
+  var nameApp = angular.module('nameApp', []);
+  nameApp.controller('nameController', function($scope) {
+
+    $scope.fname = 'The';
+
+    $scope.$watch('lname');
+
+    setTimeout(function() {
+      $scope.lname = 'Flash';
+      $scope.$apply();
+    }, 1000);
+
+  });
+</script>
+
+</body>
+</html>

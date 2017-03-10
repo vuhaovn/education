@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title>Javascript | Flash MaxSi</title>
+</head>
+<body>
+
+<canvas id="demo" width="1200" height="500"></canvas>
+
+<script type="text/javascript">
+
+"use strict";
+
+var 
+    canvas,
+    context,
+    reqAnimation,
+
+    angle = 0,
+    cx,
+    cy,
+    speedX = 5,
+    speedY = 5,
+    radius = 10;
+
+  function update(time){
+    cx += speedX;
+    cy += speedY;
+    if (cx < 0 || cx > canvas.width){
+      speedX = -speedX;
+    };
+    if (cy < 0 || cy > canvas.height){
+      speedY = -speedY;
+    };
+
+    // draw 
+    context.clearRect( 0, 0, canvas.width, canvas.height );
+    context.beginPath();
+    context.arc(cx, cy, radius, angle, Math.PI*2, false);
+    context.closePath();
+    context.fill();
+
+    reqAnimation(update);
+  }
+
+  window.onload = function(){
+    canvas = document.getElementById("demo");
+    context = canvas.getContext("2d");
+    context.fillStyle = "red";
+    cx = Math.random();
+    cy = Math.random();
+
+    reqAnimation =  window.requestAnimationFrame       ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame    ||
+                    window.oRequestAnimationFrame      ||
+                    window.msRequestAnimationFrame;
+
+    if ( reqAnimation ) {
+      update();
+    } else {
+      alert("Your browser not supported !");
+    };
+  };
+
+</script>
+</body>
+</html>

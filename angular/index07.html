@@ -1,0 +1,19 @@
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>Angular JS 01</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body ng-controller="nameController">
+
+  Good morning : <span>{{fname}}</span>&nbsp;<span>{{lname}}</span>
+
+<script>
+  function nameController($scope) {
+    $scope.fname = 'The',
+    $scope.lname = 'Flash'
+  };
+</script>
+
+</body>
+</html>

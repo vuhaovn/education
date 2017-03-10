@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title>Front end Engineer | Flash MaxSi</title>
+<link href="/share/css/share.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<div id="header">
+  <div class="inner clearfix">
+      <h1 class="logo">
+        <a href="/">
+          <img src="/share/img/logo.png" height="93" width="46" alt="Front end Engineer Flash MaxSi">
+          <span>Front end Engineer<br>Flash MaxSi</span>
+        </a>
+      </h1>
+      <div class="social">
+        <ul>
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="gmail"><a href="#">Gmail</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+        </ul>
+      <!-- /.social --></div>
+  <!-- /.inner --></div>
+<!-- /#header --></div>
+
+<div id="navigator">
+  <div class="inner">
+    <ul>
+      <li class="nav01"><a href="#">Superman</a></li>
+      <li class="nav02"><a href="#recent">Recent Works</a></li>
+      <li class="nav03"><a href="#service">Service Website</a></li>
+      <li class="nav04"><a href="#contact">Contact</a></li>
+      <li class="nav05"><a href="#">Green Lantern</a></li>
+      <li class="nav06"><a href="#">The Arrow</a></li>
+    </ul>
+  <!-- /.inner --></div>
+<!-- /#navigator --></div>
+
+<div id="slider">
+  <div class="main">
+    <ul class="clearfix">
+      <li><span class="item01"><img src="img/img-slide01.png" height="350" width="960" alt=""></span></li>
+      <li><span class="item01"><img src="img/img-slide02.png" height="350" width="960" alt=""></span></li>
+      <li><span class="item01"><img src="img/img-slide03.png" height="350" width="960" alt=""></span></li>
+      <li><span class="item01"><img src="img/img-slide04.png" height="350" width="960" alt=""></span></li>
+      <li><span class="item01"><img src="img/img-slide05.png" height="350" width="960" alt=""></span></li>
+    </ul>
+    <div class="button">
+      <a href="#" class="prev"><img src="/share/img/prev.png" height="57" width="35" alt="" /></a>
+      <a href="#" class="next"><img src="/share/img/next.png" height="56" width="35" alt="" /></a>
+    <!-- /.button --></div>
+  <!-- /.main --></div>
+<!-- /#slider --></div>
+
+<div id="contents">
+  <div class="inner">
+    <div class="section" id="recent">
+      <div class="section_title">
+        <h2>Recent Works</h2>
+      <!-- /.section_title --></div>
+      <div class="section_contents">
+        <p class="introduce">Learn by example! Find below a smattering of examples demonstrating many different features and modes of bxSlider. The slider is packed full of options, so let’s get on with it!</p>
+        <div class="slide_works">
+          <ul class="bxslider">
+            <li><a href="http://aeon.com.vn/" target="_blank"><img src="img/img-recent01.png" height="158" width="158" alt=""></a></li>
+            <li><a href="http://housefoods.com.vn/" target="_blank"><img src="img/img-recent02.png" height="158" width="158" alt=""></a></li>
+            <li><a href="http://www.nissan-global.com/EN/GCS/" target="_blank"><img src="img/img-recent03.png" height="158" width="158" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="img/img-recent04.png" height="158" width="158" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="img/img-recent05.png" height="158" width="158" alt=""></a></li>
+          </ul>
+        <!-- /.slide_works --></div>
+      <!-- /.section_contents --></div>
+    <!-- /.section --></div>
+
+    <div class="section" id="service">
+      <div class="section_title">
+        <h2>Service Website</h2>
+      <!-- /.section_title --></div>
+      <div class="section_contents">
+        <div class="service_contents">
+          <div class="items">
+            <h3 class="title designer">Designer</h3>
+            <div class="items_thumb"><img src="/share/img/icon_web-design.png" height="174" width="174" alt=""></div>
+            <p class="text">Learn by example!<br> Find below a smattering of examples demonstrating many different features and modes of bxSlider.<br> The slider is packed full of options, so let’s get on with it!</p>
+          <!-- /.items --></div>
+          <div class="items">
+            <h3 class="title coder">Coder</h3>
+            <div class="items_thumb"><img src="/share/img/icon_web-design.png" height="174" width="174" alt=""></div>
+            <p class="text">Learn by example!<br> Find below a smattering of examples demonstrating many different features and modes of bxSlider.<br> The slider is packed full of options, so let’s get on with it!</p>
+          <!-- /.items --></div>
+          <div class="items">
+            <h3 class="title developer">Developer</h3>
+            <div class="items_thumb"><img src="/share/img/icon_web-design.png" height="174" width="174" alt=""></div>
+            <p class="text">Learn by example!<br> Find below a smattering of examples demonstrating many different features and modes of bxSlider.<br> The slider is packed full of options, so let’s get on with it!</p>
+          <!-- /.items --></div>
+        <!-- /.service_contents --></div>
+      <!-- /.section_contents --></div>
+    <!-- /.section --></div>
+
+    <div class="section" id="contact">
+      <div class="section_title">
+        <h2>Contact</h2>
+      <!-- /.section_title --></div>
+      <div class="section_contents">
+        <div class="contact_contents">
+          <div class="contact_form">
+            <form method="post">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>First Name</th>
+                    <td><input ng-model="fname" type="text" name="fname" placeholder="Please input your first name" required></td>
+                  </tr>
+                  <tr>
+                    <th>Last Name</th>
+                    <td><input ng-model="lname" type="text" name="lname" placeholder="Please input your last name" required></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+            <p><h3>Hello:</h3> {{fname}}&nbsp;{{lname}}</p>
+          <!-- /.contact_form --></div>
+          <div id="maps_canvas"></div>
+        <!-- /.contact_contents --></div>
+      <!-- /.section_contents --></div>
+    <!-- /.section --></div>
+
+  <!-- /.inner --></div>
+<!-- /#contents --></div>
+
+<div id="footer">
+  <div class="inner">
+    <p>Copyright &copy; 2015 Front End Engineer. All Rights Reserved.</p>    
+  <!-- /.inner --></div>
+<!-- /#footer --></div>
+
+<div id="backtop">
+  <a href="#" class="pageTop"><img src="/share/img/img-backtop.png" height="100" width="20" alt=""></a>
+<!-- /#backtop --></div>
+
+<script type="text/javascript" src="/share/js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/share/js/angular.min.js"></script>
+<script type="text/javascript" src="/share/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/share/js/wlb.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+<script type="text/javascript" src="js/maps.js"></script>
+</body>
+</html>

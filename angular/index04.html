@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Data Binding with Backbone JS</title>
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="//jashkenas.github.io/underscore/underscore-min.js"></script>
+  <script src="//jashkenas.github.io/backbone/backbone-min.js"></script>
+</head>
+<body>
+
+  Input name : <input id="textInput" type="text"/>
+  Good morning : <span id="nameDiv"></span>!
+
+  <script>
+
+    // Model
+    var model = new Backbone.Model({
+      name: ''
+    });
+
+    // View
+    model.on('change:name', function() {
+      $("#nameDiv").html( model.get('name') );
+    });
+
+    // Controller
+    $("#textInput").on("keyup", function() {
+      model.set('name', $("#textInput").val() );
+    });
+
+  </script>
+
+</body>
+</html>

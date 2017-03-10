@@ -1,0 +1,1 @@
+<p style="text-align: center; font-size: 20px;">Cam on ban da dang ky , chung toi se lien he trong thoi gian som nhat</p>

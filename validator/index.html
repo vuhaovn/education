@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title>Jquery Vadidator</title>
+<link href="css/share.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/validator.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <div id="validator">
+    <div class="inner">
+      <h2>Validator</h2>
+      <div class="validator_form">
+        <form method="post" id="validatorForm">
+          <table>
+            <tbody>
+              <tr>
+                <th>Fullname</th>
+                <td>
+                  <input type="text" name="fullName" class="fullName">
+                </td>
+              </tr>
+              <tr>
+                <th>Username *</th>
+                <td>
+                  <input type="text" name="userName" id="userName">
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Email address *</th>
+                <td>
+                  <input type="text" name="email" id="email">
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Website URL</th>
+                <td>
+                  <input type="text" name="websiteUrl" class="websiteUrl">
+                </td>
+              </tr>
+              <tr>
+                <th>Password *</th>
+                <td>
+                  <input type="password" name="passWord" id="passWord">
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Confirm Password *</th>
+                <td>
+                  <input type="password" name="repassWord" id="repassWord">
+                  <p class="error">This field is required</p>
+                  <p class="pass_error">The repassword is not correct</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Date of birth *</th>
+                <td>
+                  <input type="text" name="date" id="date">
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Avatar *</th>
+                <td>
+                  <input type="text" id="filename">
+                  <label for="avata" id="browser">
+                    Browser...
+                    <input type="file" name="avata" id="avata">
+                  </label>
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Country *</th>
+                <td>
+                  <select name="" id="country">
+                    <option value="">Select</option>
+                    <option value="vietnam">Viet Nam</option>
+                    <option value="japan">Japan</option>
+                    <option value="american">American</option>
+                  </select>
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Note(20 chars min, 100 max)</th>
+                <td>
+                  <textarea name="" id="note" cols="30" rows="10"></textarea>
+                  <p class="error">20 chars min, 100 max</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Gender *</th>
+                <td>
+                  <label>
+                    <input type="radio" class="radio" name="gender" value="male"><span class="btn_radio"></span><span>Male</span>
+                  </label>
+                  <label>
+                    <input type="radio" class="radio" name="gender" value="female"><span class="btn_radio"></span><span>Female</span>
+                  </label>
+                  <p class="error">This field is required</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Hobbies(2 minimum)</th>
+                <td>
+                  <label class="mb"><input type="checkbox" name="hobbies" class="hobbies"><span>Coding</span></label>
+                  <label class="mb"><input type="checkbox" name="hobbies" class="hobbies"><span>Reading</span></label>
+                  <label class="mb"><input type="checkbox" name="hobbies" class="hobbies"><span>Sleeping</span></label>
+                  <label class="edge"><input type="checkbox" name="hobbies" class="hobbies"><span>Accept out policy *</span></label>
+                  <p class="error">2 minimum</p>
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>
+                  <input type="reset" value="Reset">
+                  <input type="submit" value="Submit" id="submit">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      <!-- /.validator_form --></div>
+    <!-- /.inner --></div>
+  <!-- /#validator --></div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/validator.js"></script>
+</body>
+</html>

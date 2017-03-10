@@ -1,0 +1,28 @@
+<html ng-app="nameApp">
+<head>
+  <meta charset="utf-8">
+  <title>Objects Angular</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body ng-controller="nameController">
+
+  <ul>
+    <li ng-repeat="name in names">{{name.name}}&nbsp;Realname: {{name.realname}}&nbsp;{{name.age}}&nbsp;{{name.gender}}</li>
+  </ul>
+
+<script>
+  
+  var nameApp = angular.module('nameApp', []);
+
+  nameApp.controller('nameController', function($scope) {
+    $scope.names = [
+      { 'name': 'The Flash', "realname": 'Tran Vu Hao' },
+      { 'age': '19' },
+      { 'gender': 'Male' }
+    ];
+  });
+
+</script>
+
+</body>
+</html>
