@@ -74,10 +74,12 @@
       //th3:  2%6 * 160 = 320
       //th4:  3%6 * 160 = 480
 
-      $(item).css({
+      console.log(item);
+
+      $(item).stop().animate({
         "top": top + "px",
         "left": left + "px"
-      });
+      }, 800);
 
       // var hue = 'rgb(' +
       //   (Math.floor((256-199)*Math.random()) + 200) + ',' +

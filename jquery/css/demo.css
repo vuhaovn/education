@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-#contents {
-  /*width: 960px;*/
-  /*margin: 0 auto;*/
-}
-
 .wrap {
   position: relative;
   overflow: hidden;
@@ -12,11 +7,22 @@
 
 .wrap li {
   position: absolute;
-  transition: all 0.8s ease;
   width: 160px;
   height: 160px;
 }
 
 .wrap li img {
   display: none;
+}
+
+.wrap li:hover {
+  opacity: 0.7;
+}
+
+#random {
+  border: none;
+  padding: 10px 30px;
+  background: rgb(7, 131, 75);
+  color: #fff;
+  cursor: pointer;
 }
